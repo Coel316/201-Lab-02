@@ -18,7 +18,7 @@ if(typeof string === 'string'){
 }
 */
 
-var nycStreets = prompt('Did I grow up in Florida');
+var nycStreets = prompt('Did I grow up in Florida ?');
 nycStreets = nycStreets.toLowerCase();
 
 if (nycStreets === 'yes' || nycStreets === 'y') {
@@ -35,3 +35,14 @@ if (likeTotravel === 'yes' || likeTotravel === 'y') {
 } else {
   alert('Truth is - I love to travel');
 }
+
+var likeTechnology = prompt('Do I like technology ?');
+likeTechnology = likeTechnology.toLowerCase();
+
+if (likeTechnology === 'no' || likeTechnology === 'n') {
+  alert('Check out my About me page');
+} else {
+  alert('Technology is part of the future');
+}
+
+
