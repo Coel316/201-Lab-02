@@ -45,4 +45,11 @@ if (likeTechnology === 'no' || likeTechnology === 'n') {
   alert('Technology is part of the future');
 }
 
+var workFormilitary = prompt('Have I ever worked for the Military ?');
+workFormilitary = workFormilitary.toLowerCase();
 
+if (workFormilitary === 'yes' || workFormilitary === 'y') {
+  alert('Correct, I was in the best branch !');
+} else {
+  alert('Think again, I did');
+}
