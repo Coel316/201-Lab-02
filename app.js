@@ -26,3 +26,12 @@ if (nycStreets === 'yes' || nycStreets === 'y') {
 } else {
   alert('Correct! I grew up in NYC');
 }
+
+var likeTotravel = prompt ('Do I like to travel ?');
+likeTotravel = likeTotravel.toLowerCase();
+
+if (likeTotravel === 'yes' || likeTotravel === 'y') {
+  alert('You\'re correct. Been many places');
+} else {
+  alert('Truth is - I love to travel');
+}
