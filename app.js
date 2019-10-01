@@ -53,3 +53,12 @@ if (workFormilitary === 'yes' || workFormilitary === 'y') {
 } else {
   alert('Think again, I did');
 }
+
+var codedWithbasic = prompt('Have I ever coded in BASIC ?');
+codedWithbasic = codedWithbasic.toLowerCase();
+
+if (codedWithbasic === 'yes' || codedWithbasic === 'y') {
+  alert('True.  BASIC was the stuff.');
+} else {
+  alert('I did too code with BASIC');
+}
