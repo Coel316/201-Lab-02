@@ -18,7 +18,7 @@ if(typeof string === 'string'){
 }
 */
 
-var userName = prompt ('what is your name ?');
+var userName = prompt('what is your name ?');
 alert('Greetings ' + userName + '.  Let\'s see how well you know me.');
 
 var nycStreets = prompt('Did I grow up in Florida ?');
@@ -32,7 +32,7 @@ if (nycStreets === 'yes' || nycStreets === 'y') {
   alert('Correct! I grew up in NYC');
 }
 
-var likeTotravel = prompt ('Do I like to travel ?');
+var likeTotravel = prompt('Do I like to travel ?');
 likeTotravel = likeTotravel.toLowerCase();
 
 if (likeTotravel === 'yes' || likeTotravel === 'y') {
@@ -75,5 +75,29 @@ if (codedWithbasic === 'yes' || codedWithbasic === 'y') {
   //console.log('I did too code with BASIC');
   alert('I did too code with BASIC');
 }
+
+for (var i = 0; i < 4; i++) {
+  var computerNumber = 3;
+  var userNumber = prompt('Let\'s play a game ' + userName + '. Guess my favirote number ?');
+  if (computerNumber == userNumber) {
+    alert('Correct ! You\'re a good guesser');
+    break;
+  }
+
+  else if ((computerNumber > userNumber) && (i !== 3)) {
+    alert('Try again.  It\'s higher');
+  } else if ((computerNumber < userNumber) && (i !==3)) {
+    alert('Try again.  It\'s lower');
+    //} else if (i === 3) {
+    //alert('My secret # is actually ' + computerNumber);
+    //break;
+  }
+  if (i === 3) {
+    alert('My secret # is actually ' + computerNumber);
+  }
+}
+
+////////////////
+//var guessNumber = prompt('Let\s play a guessing game');
 
 alert('Thank you ' + userName + ' for playing');
