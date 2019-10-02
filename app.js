@@ -65,3 +65,5 @@ if (codedWithbasic === 'yes' || codedWithbasic === 'y') {
 } else {
   alert('I did too code with BASIC');
 }
+
+alert('Thank you ' + userName + ' for playing');
