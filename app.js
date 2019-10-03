@@ -19,6 +19,7 @@ if(typeof string === 'string'){
 }
 */
 
+
 var userName = prompt('what is your name ?');
 alert('Greetings ' + userName + '.  Let\'s see how well you know me.');
 
