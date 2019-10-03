@@ -113,12 +113,14 @@ for (var i1 = 0; i1 < 6; i1++) {
   for (var i = 0; i < statesIvisited.length; i++) {
     if (promptUserforstatesivisited === statesIvisited[i]) {
       alert('Correct! Been there, done that');
+      alert('Been to every state except Vermont (I think), NH and HI');
       guessCorrectly = true;
       break;
     }
   }
   if (i1 === 5) {
     alert('Sorry, no more guesses');
+    alert('Been to every state except Vermont (I think), NH and HI');
     break;
   }
 
