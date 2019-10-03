@@ -86,7 +86,7 @@ for (var i = 0; i < 4; i++) {
 
   else if ((computerNumber > userNumber) && (i !== 3)) {
     alert('Try again.  It\'s higher');
-  } else if ((computerNumber < userNumber) && (i !==3)) {
+  } else if ((computerNumber < userNumber) && (i !== 3)) {
     alert('Try again.  It\'s lower');
     //} else if (i === 3) {
     //alert('My secret # is actually ' + computerNumber);
@@ -97,7 +97,31 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-////////////////
-//var guessNumber = prompt('Let\s play a guessing game');
+var statesIvisited = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
+  'Delaware', 'Florida', 'Georgia', 'Idaho', 'Illinois', 'Kansas', 'Massachusetts', 'Mississippi', 'Montana',
+  'Nebraska', 'Michigan', 'Oklahoma', 'Minnesota', 'Maine', 'Ohio', 'Maryland', 'Texas', 'Vermont', 'Tennessee', 'Missouri',
+  'Indiana', 'Kentucky', 'Louisiana', 'Oregon', 'Utah', 'Pennsylvania', 'Rhode Island', 'North Dakota', 'North Carolina',
+  'West Virginia', 'New Mexico', 'New Jersey', 'New York', 'South Carolina', 'Nevada', 'South Dakota', 'Iowa', 'Virginia',
+  'Washington', 'Wisconsin', 'Wyoming'];
+
+var guessCorrectly = false;
+for (var i1 = 0; i1 < 6; i1++) {
+  if (guessCorrectly === true) {
+    break;
+  }
+  var promptUserforstatesivisited = prompt('Can you name some states I visited in ?');
+  for (var i = 0; i < statesIvisited.length; i++) {
+    if (promptUserforstatesivisited === statesIvisited[i]) {
+      alert('Correct! Been there, done that');
+      guessCorrectly = true;
+      break;
+    }
+  }
+  if (i1 === 5) {
+    alert('Sorry, no more guesses');
+    break;
+  }
+
+}
 
 alert('Thank you ' + userName + ' for playing');
