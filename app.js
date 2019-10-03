@@ -1,4 +1,5 @@
 'use strict';
+var counter = 0;
 
 //var number = 4;
 //var string = 'string';
@@ -27,6 +28,7 @@ nycStreets = nycStreets.toLowerCase();
 if (nycStreets === 'yes' || nycStreets === 'y') {
   //console.log('I didnt, Check my about me page');
   alert('I didnt, Check my about me page');
+  counter++;
 } else {
   //console.log('Correct! I grew up in NYC');
   alert('Correct! I grew up in NYC');
@@ -38,6 +40,7 @@ likeTotravel = likeTotravel.toLowerCase();
 if (likeTotravel === 'yes' || likeTotravel === 'y') {
   //console.log('You\'re correct. Been many places');
   alert('You\'re correct. Been many places');
+  counter++;
 } else {
   //console.log('Truth is - I love to travel');
   alert('Truth is - I love to travel');
@@ -49,6 +52,7 @@ likeTechnology = likeTechnology.toLowerCase();
 if (likeTechnology === 'no' || likeTechnology === 'n') {
   //console.log('Check out my About me page');
   alert('Check out my About me page');
+  counter++;
 } else {
   //console.log('Technology is part of the future');
   alert('Technology is part of the future');
@@ -60,6 +64,7 @@ workFormilitary = workFormilitary.toLowerCase();
 if (workFormilitary === 'yes' || workFormilitary === 'y') {
   //console.log('Correct, I was in the best branch !');
   alert('Correct, I was in the best branch !');
+  counter++;
 } else {
   //console.log('Think again, I did');
   alert('Think again, I did');
@@ -71,6 +76,7 @@ codedWithbasic = codedWithbasic.toLowerCase();
 if (codedWithbasic === 'yes' || codedWithbasic === 'y') {
   //console.log('True.  BASIC was the stuff.');
   alert('True.  BASIC was the stuff.');
+  counter++;
 } else {
   //console.log('I did too code with BASIC');
   alert('I did too code with BASIC');
@@ -81,6 +87,7 @@ for (var i = 0; i < 4; i++) {
   var userNumber = prompt('Let\'s play a game ' + userName + '. Guess my favirote number ?');
   if (computerNumber == userNumber) {
     alert('Correct ! You\'re a good guesser');
+    counter++;
     break;
   }
 
@@ -114,6 +121,7 @@ for (var i1 = 0; i1 < 6; i1++) {
     if (promptUserforstatesivisited === statesIvisited[i]) {
       alert('Correct! Been there, done that');
       alert('Been to every state except Vermont (I think), NH and HI');
+      counter++;
       guessCorrectly = true;
       break;
     }
@@ -127,3 +135,4 @@ for (var i1 = 0; i1 < 6; i1++) {
 }
 
 alert('Thank you ' + userName + ' for playing');
+alert('You got ' + counter + ' questions correct');
