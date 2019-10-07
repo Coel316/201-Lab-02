@@ -1,14 +1,31 @@
 h1 {
     color: red;
     background-color: blue;
+    font-size: 35px;
+    text-align: center;
+}
+
+h3 {
+font-size: 25px;
 }
 
 h4 {
-    background-color: aqua;
+    background-color: white);
     margin-bottom: 2cm;
     border: 5px solid red;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 h5 {
     border: 8px solid black;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+body {
+    background-color: rgb(16, 80, 31);
+    
 }
