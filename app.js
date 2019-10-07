@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 var counter = 0;
 
 // question 1
